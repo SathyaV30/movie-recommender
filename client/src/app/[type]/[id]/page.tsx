@@ -71,13 +71,12 @@ interface CastMember {
   id?: number;
 }
 
-// -- Next.js 13+ Server Component --
-export default async function TitlePage({
-  params,
-}: {
-  params: { type: string; id: string };
-}) {
-  const { type, id } = params;
+
+
+type TitlePageParams = { params: Promise<{ type: string; id: string }> };
+
+export default async function TitlePage({ params }: TitlePageParams) {
+  const { type, id } = await params;
 
   // 1) Validate route
   if (!type || !id) {
