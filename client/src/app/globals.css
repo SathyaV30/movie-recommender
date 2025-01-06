@@ -1,0 +1,43 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-background: #121212; /* Dark background */
+  --color-foreground: #e5e5e5; /* Light text */
+  --color-primary: #e50914;    /* Netflix red */
+  --color-secondary: #b81d24;  /* Slightly darker red */
+  --color-accent: #303030;     /* Dark gray for accents */
+  --color-neutral: #b3b3b3;    /* Neutral text color */
+  --font-primary: 'Figtree', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+}
+
+
+
+body {
+  font-family: var(--font-primary);
+}
+
+.chat-bubble:before  {
+  display: none;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
