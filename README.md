@@ -26,7 +26,7 @@ Welcome to my **RAG-based Answer Engine** project PopcornPal. It is a movie reco
 
 1. **Clone** the repo:  
    ```bash
-   git clone https://github.com/username/movie-rag.git .
+   git clone https://github.com/SathyaV30/movie-recommender.git .
    ```
 
 2. **Install** dependencies for both client and server:  
