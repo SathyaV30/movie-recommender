@@ -126,7 +126,6 @@ async function generateTMDBQuery(userMessage, requestType) {
       ${genreMapString}
     
       Possible fields:
-        query,
         with_genres,
         with_keywords,
         primary_release_date_gte, (For movies only)
@@ -154,8 +153,9 @@ async function generateTMDBQuery(userMessage, requestType) {
       so the system can look up the actors by name.
       
       If the user references abstract or meta traits, you can add "with_keywords_names": 
-      "melancholy, tense" so the system can look up the matching keyword IDs. Try to add atleast 8-9 keywords for an expansive search.
-      Only include this parameter if the query is complex or abstract.
+      "melancholy, tense" so the system can look up the matching keyword IDs. You can also
+      add fictional characters like "bond, potter". Try to add atleast 2-3 keywords for an expansive search
+      Add more the query is abstract, and less if the query is more straightforward.
       
       Additional rules:
         - "high rated": Include "vote_average_gte": "7.0"
