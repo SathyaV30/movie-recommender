@@ -252,18 +252,21 @@ export default function ChatClient({ initialMessages = [] }: ChatClientProps) {
                                   alt={movie.title}
                                 />
                                 {/* Rating wheel */}
-                                <div className="absolute bottom-2 right-2">
-                                  <div
-                                    className={`radial-progress ${ratingColorClass} bg-gray-200`}
-                                    style={{
-                                      "--value": `${rating * 10}`,
-                                      "--size": "3rem",
-                                      "--thickness": "6px",
-                                    } as React.CSSProperties}
-                                  >
-                                    {Math.round(rating * 10) / 10}
-                                  </div>
-                                </div>
+                                {rating > 0 && (
+                            <div className="absolute bottom-2 right-2">
+                              <div
+                                className={`radial-progress ${ratingColorClass} bg-gray-200`}
+                                style={{
+                                  "--value": `${rating * 10}`,
+                                  "--size": "3rem",
+                                  "--thickness": "6px",
+                                } as React.CSSProperties}
+                              >
+                                {Math.round(rating * 10) / 10}
+                              </div>
+                            </div>
+                          )}
+
                               </div>
 
                               {/* Back Side */}
