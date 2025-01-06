@@ -1,5 +1,5 @@
 
-# Movie Recommender RAG Engine
+# Movie Recommender RAG Engine - PopcornPal
 
 ## Introduction
 
@@ -73,7 +73,7 @@ Welcome to my **RAG-based Answer Engine** project PopcornPal. It is a movie reco
 2. **LLM** (Step 1) → GPT-4o classifies the request type (`movie` vs `tv` or `none`).
 3. **TMDB** → The system forms a param and fetches from TMDB.
 4. **LLM** (Step 2) → GPT-4o summarizes the top 5 or so results for a final AI answer and provides a recommendation based on the users query.
-5. **UI** → Displays the refined recommendation with an animated typing indicator.
+5. **UI** → Neatly displays the refined recommendation with flip cards to see poster image on the front and overview on back.
 
 
 ## Usage Details
