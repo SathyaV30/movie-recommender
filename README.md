@@ -5,7 +5,7 @@
 
 Welcome to my **RAG-based Answer Engine** project PopcornPal. It is a movie recommender system that uses a retrieval-augmented generation (RAG) flow to suggest movies based on user criteria.
 
-- **Deployed Demo**: [Live Link]([https://example.com](https://movie-recommender-49p1jqkjx-sathyav30s-projects.vercel.app/))
+- **Deployed Demo**: [Live Link](https://movie-recommender-rosy.vercel.app)
 
 
 ## Tech Stack
